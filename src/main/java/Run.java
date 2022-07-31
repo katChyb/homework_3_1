@@ -19,11 +19,7 @@ public class Run {
                    char znakASCI;
                    Random liczba = new Random();  // stworzenie obiektu klasy random
                    int los = liczba.nextInt(126)+33;  // losowanie liczby z zakresu i przypisianie do zmiennej całkowitej
-
-                   //  System.out.println(los);                // wylosowana liczba int
-
                    znakASCI = Character.valueOf((char) los);  // zamiana int (numer ASCII na char z tablicy ASCII)
-                   //   System.out.println(znakASCI);// wyświetlenie tej losowej liczby
                    token.add(znakASCI);
                }
                System.out.println("Twoj token to:" + token);
@@ -32,13 +28,8 @@ public class Run {
             for (int i = 0; i < rozmiar; i++) {
                 char znakASCI;
                 Random liczba = new Random();// stworzenie obiektu klasy random
-                int los = liczba.nextInt(256)+33;// losowanie liczby z zakresu i przypisianie do zmiennej całkowitej
-
-
-                //  System.out.println(los);                // wylosowana liczba int
-
+                int los = liczba.nextInt(126)+33;// losowanie liczby z zakresu i przypisianie do zmiennej całkowitej
                 znakASCI = Character.valueOf((char) los);  // zamiana int (numer ASCII na char z tablicy ASCII)
-                //   System.out.println(znakASCI);// wyświetlenie tej losowej liczby
                 token.add(znakASCI);
             }
             System.out.println("Twoj token to:" + token);
@@ -48,22 +39,14 @@ public class Run {
                 char znakASCI;
                 Random liczba = new Random();  // stworzenie obiektu klasy random
                 int los = liczba.nextInt(126)+33;  // losowanie liczby z zakresu i przypisianie do zmiennej całkowitej
-
-                //  System.out.println(los);                // wylosowana liczba int
-
                 znakASCI = Character.valueOf((char) los);  // zamiana int (numer ASCII na char z tablicy ASCII)
-                //   System.out.println(znakASCI);// wyświetlenie tej losowej liczby
                 token.add(znakASCI);
             }
             System.out.println("Twoj token to:" + token);
             break;
         default:
-            System.out.println("Wybrałes rozmiar tokena spoza listy, sprobuj jeszcze raz.");
+            System.out.println("Wybrales rozmiar tokena spoza listy, sprobuj jeszcze raz.");
 
         }
-
-
     }
-
-
 }
