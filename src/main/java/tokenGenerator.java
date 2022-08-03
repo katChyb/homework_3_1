@@ -8,45 +8,27 @@ public class tokenGenerator {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Podaj wielkosc Tokena: 5, 10, 15");
-        int rozmiar = scanner.nextInt();
+        System.out.println("Please provide Token size: 5, 10, 15");
+        int tokenSize = scanner.nextInt();
         List<Character> token = new ArrayList<>();
 
 
-    switch (rozmiar) {
-           case 5 :
-               for (int i = 0; i < rozmiar; i++) {
-                   char znakASCI;
-                   Random liczba = new Random();  // stworzenie obiektu klasy random
-                   int los = liczba.nextInt(126)+33;  // losowanie liczby z zakresu i przypisianie do zmiennej całkowitej
-                   znakASCI = Character.valueOf((char) los);  // zamiana int (numer ASCII na char z tablicy ASCII)
-                   token.add(znakASCI);
-               }
-               System.out.println("Twoj token to:" + token);
-           break;
-        case 10 :
-            for (int i = 0; i < rozmiar; i++) {
-                char znakASCI;
-                Random liczba = new Random();// stworzenie obiektu klasy random
-                int los = liczba.nextInt(126)+33;// losowanie liczby z zakresu i przypisianie do zmiennej całkowitej
-                znakASCI = Character.valueOf((char) los);  // zamiana int (numer ASCII na char z tablicy ASCII)
-                token.add(znakASCI);
-            }
-            System.out.println("Twoj token to:" + token);
-            break;
-        case 15 :
-            for (int i = 0; i < rozmiar; i++) {
-                char znakASCI;
-                Random liczba = new Random();  // stworzenie obiektu klasy random
-                int los = liczba.nextInt(126)+33;  // losowanie liczby z zakresu i przypisianie do zmiennej całkowitej
-                znakASCI = Character.valueOf((char) los);  // zamiana int (numer ASCII na char z tablicy ASCII)
-                token.add(znakASCI);
-            }
-            System.out.println("Twoj token to:" + token);
-            break;
-        default:
-            System.out.println("Wybrales rozmiar tokena spoza listy, sprobuj jeszcze raz.");
-
+        switch (tokenSize) {
+            case 5 -> addToTable(token, tokenSize);
+            case 10 -> addToTable(token, tokenSize);
+            case 15 -> addToTable(token, tokenSize);
+            default -> System.out.println("You have selected a token size not included in the list, please try again.");
         }
+    }
+    public static void addToTable(List<Character> token, int tokenSize) {
+        for (int i = 0; i < tokenSize; i++) {
+            char signASCI;
+            Random number = new Random();  // stworzenie obiektu klasy random
+            int los = number.nextInt(126) + 33;  // losowanie liczby z zakresu i przypisianie do zmiennej całkowitej
+            signASCI = Character.valueOf((char) los);  // zamiana int (numer ASCII na char z tablicy ASCII)
+            token.add(signASCI);
+        }
+        System.out.println("Your token is: " + token);
+
     }
 }

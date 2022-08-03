@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eafdc755-aa8e-4cda-93ea-a2b110f64479" name="Changes" comment="wersja z 31/07">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="eafdc755-aa8e-4cda-93ea-a2b110f64479" name="Changes" comment="wersja z 31/07 zmiana nazwy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tokenGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tokenGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tokenGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +37,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
 }]]></component>
   <component name="RunManager">
@@ -78,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659278221312</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="wersja z 31/07 zmiana nazwy">
+      <created>1659278377351</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659278377351</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -95,6 +101,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="proba z 30/07 dziala losowanie z zakresu" />
     <MESSAGE value="wersja z 31/07" />
-    <option name="LAST_COMMIT_MESSAGE" value="wersja z 31/07" />
+    <MESSAGE value="wersja z 31/07 zmiana nazwy" />
+    <option name="LAST_COMMIT_MESSAGE" value="wersja z 31/07 zmiana nazwy" />
   </component>
 </project>
