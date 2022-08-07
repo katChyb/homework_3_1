@@ -47,8 +47,6 @@ public class numberToGuess {
     public static int getNumberFromUser() {
 
         Scanner scanner = new Scanner(System.in);
-    //    System.out.println("Start your guesswork in the range of 0-99, remember you have 5 tries, your proposed number is: ");;
-
         while (!scanner.hasNextInt()) {
             System.out.println("This is not a number! Please try again:");
             scanner.nextLine();
