@@ -43,7 +43,6 @@ public class numberToGuess {
 
     }
 
-
     public static int getNumberFromUser() {
 
         Scanner scanner = new Scanner(System.in);
