@@ -30,12 +30,6 @@ public class numberToGuess {
                 else if (userNumber < numberToGuess && i !=tries -1)  {
                 System.out.println("Your number is LOWER than the one you are trying to guess");
                 System.out.println("Please try again, you have " +  (tries - (i+1)) + " attempt left"  );}
-
-               else  if (Objects.equals(numberToGuess, userNumber) == false && i !=tries -1){
-                        System.out.println("Sorry you didn't guess the number, your proposed number was: " + userNumber);
-
-            }
-
         }
         if (i == tries) {
             System.out.println("You have exhausted 5 tries. The number to guess was " + numberToGuess);
